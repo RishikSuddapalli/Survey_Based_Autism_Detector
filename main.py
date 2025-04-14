@@ -18,13 +18,14 @@ templates = Jinja2Templates(directory="templates")
 
 # Load all models
 models = {
-    "Logistic Regression": joblib.load('logreg_model.joblib'),
-    "Decision Tree": joblib.load('DTC_model.joblib'),
-    "AdaBoost": joblib.load('ABC_model.joblib'),
-    "Gradient Boosting": joblib.load('GBC_model.joblib'),
-    "Random Forest": joblib.load('RFC_model.joblib'),
-    "SVM": joblib.load('SVC_model.joblib'),
-    "XGBoost": joblib.load('xgboost_model.joblib')
+    "Logistic Regression": joblib.load('models/logreg_model.joblib'),
+    "Decision Tree": joblib.load('models/DTC_model.joblib'),
+    "AdaBoost": joblib.load('models/ABC_model.joblib'),
+    "Gradient Boosting": joblib.load('models/GBC_model.joblib'),
+    "Random Forest": joblib.load('models/RFC_model.joblib'),
+    "SVM": joblib.load('models/SVC_model.joblib'),
+    "XGBoost": joblib.load('models/xgboost_model.joblib'),
+    "ANN": joblib.load('models/ANN_model.joblib')
 }
 
 # Load scaler and feature names
